@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/animateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/splashicon"
+        android:visibility="gone" />
+
+   
+
+    <TextView
+        android:id="@+id/splashtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/spalshtext"
+        android:layout_marginRight="15dp"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/afteranimate"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/splashtext"
+        android:layout_alignTop="@+id/splashtext"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/splashtext"
+        android:scaleType="centerInside"
+        android:src="@drawable/splashicon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashtext"
+        android:layout_centerHorizontal="true"
+        android:text="@string/spalshtextbtn"
+        android:textSize="20sp" />
+
+</RelativeLayout>

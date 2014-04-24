@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider"
+        android:background="@color/white"
+        android:paddingBottom="15dp"
+        android:paddingTop="20dp" >
+
+        <ImageView
+            android:id="@+id/imgAirDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/icon_airdrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgAirDrop"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Air Drop"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Share instantly with people nearby. If they do not appear automatically, ask them to open Control Center and turn on AirDrop." />
+        </LinearLayout>
+    </RelativeLayout>
+    -->
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/lLayoutImages"
+        android:background="@color/sky_blue"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lLayoutImages"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_corner_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/lEmail"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            
+            android:background="@drawable/share_popup_selector"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_mail" />
+
+            <TextView
+                android:id="@+id/txtMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="Email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lMessage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share_popup_selector"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_message" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="Message" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lFacebook"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share_popup_selector"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_fb" />
+
+            <TextView
+                android:id="@+id/txtFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="Facebook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lTwitter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share_popup_selector"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:soundEffectsEnabled="true"
+                android:src="@drawable/share_twitter" />
+
+            <TextView
+                android:id="@+id/txtTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="Twitter" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/sky_blue"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!--
+         <ImageView
+        android:id="@+id/imgCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/share_cancel" />
+    -->
+
+</RelativeLayout>

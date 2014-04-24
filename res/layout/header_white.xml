@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff" 
+    >
+    
+    
+    <ImageView
+        android:id="@+id/headerimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="right|center_vertical"
+        android:layout_above="@+id/footer"
+        android:src="@drawable/ilv_ip5_logo_small"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/back"
+        android:orientation="horizontal"
+        android:layout_width="72dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+        
+        <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_menu"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        />
+    </LinearLayout>
+    <View 
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dividerline"/>
+
+</RelativeLayout>

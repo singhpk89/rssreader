@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.interapt.android.InsiderLouisville"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".InsiderLouisevilleApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Sherlock.NoActionBar" >
+        <activity
+            android:name="com.interapt.android.InsiderLouisville.activities.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name="com.interapt.android.InsiderLouisville.activities.SplashActivity" >
+        </activity> -->
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.LoginActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.SwipeLoginActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.HomeActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.WebviewActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.DeveloperActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.socialshare.AlertViewActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.socialshare.ShareViewActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.socialshare.SocialShareActivity" >
+        </activity>
+         <activity android:name="com.interapt.android.InsiderLouisville.activities.CreateAccountActivity" >
+        </activity>
+         <activity android:name="com.interapt.android.InsiderLouisville.activities.HomeFeedActivity" >
+        </activity>
+         <activity android:name="com.interapt.android.InsiderLouisville.activities.AboutActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.PrivatePolicyActivity" >
+        </activity>
+         <activity android:name="com.interapt.android.InsiderLouisville.activities.TOSActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.NotificationsActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.SaveProfileActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.UpdateProfileActivity" >
+        </activity>
+        <activity android:name="com.interapt.android.InsiderLouisville.activities.ArticlePreviewActivity" >
+        </activity>
+         <activity android:name="com.interapt.android.InsiderLouisville.activities.NewsActivity" >
+        </activity>
+        <activity
+            android:name="com.interapt.android.InsiderLouisville.Login2Activity"
+            android:label="@string/title_activity_login2"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/appbackground">
+
+    <include
+        android:id="@+id/header_home"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/header_black" />
+
+    <ListView android:id="@+id/list_notif"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header_home"
+        android:dividerHeight="1dp"
+        android:divider="@color/text_color"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent">
+        
+    </ListView>
+   
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground" >
+
+    <include
+        android:id="@+id/header_home"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/header_black" />
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_home"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/form_bg"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/form_textbox" />
+
+        <EditText
+            android:id="@+id/fname"
+            style="@style/form_textbox"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/lname"
+            style="@style/form_textbox"
+            android:layout_below="@+id/fname"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/pin"
+            android:imeOptions="actionDone"
+            android:imeActionLabel="Done"
+            style="@style/form_textbox"
+            android:layout_below="@+id/lname"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/save"
+        style="@style/label"
+        android:layout_width="160dp"
+        android:layout_below="@+id/form"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+</RelativeLayout>

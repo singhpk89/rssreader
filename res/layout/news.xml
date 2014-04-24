@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground" >
+
+    <include
+        android:id="@+id/header_home"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/header_black" />
+
+    <com.interapt.android.InsiderLouisville.customlistview.HorizontalListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:widget="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/HorizontalListView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/header_home"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#878787"
+        android:gravity="center_vertical"
+        android:listSelector="@android:color/transparent"
+        widget:dividerWidth="2dp" />
+
+    <com.interapt.android.InsiderLouisville.customlistview.StickyListHeadersListView
+        android:id="@+id/stickyheaders_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HorizontalListView"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

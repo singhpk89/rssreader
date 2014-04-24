@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/headerlayout"
+        layout="@layout/header_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerlayout"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:background="@drawable/orange_box"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1" 
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:text="Become an Insider!"
+                    android:textColor="@color/text_color"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:text="By creating an account you are \n agreeing with insider Louisville&apos;s\nTerms and Services."
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:weightSum="6" >
+
+                <EditText
+                    android:id="@+id/txtemail"
+                    android:layout_marginTop="5dp"
+                    android:hint="EMAIL"
+                    style="@style/textbox" />
+
+                <EditText
+                    android:id="@+id/txtfname"
+                    android:layout_marginTop="5dp"
+                    android:hint="FIRST NAME"
+                    style="@style/textbox"/>
+
+                <EditText
+                    android:id="@+id/txtlname"
+                    android:layout_marginTop="5dp"
+                    android:hint="LAST NAME"
+                    style="@style/textbox" />
+
+                <EditText
+                    android:id="@+id/txtzip"
+                    style="@style/textbox"
+                    android:layout_marginTop="5dp"
+                    android:hint="HOME ZIP CODE"/>
+
+                <EditText
+                    android:id="@+id/txtpwd"
+                    android:layout_marginTop="5dp"
+                    android:hint="PASSWORD"
+                  
+                  style="@style/textbox" />
+
+                <TextView
+                    android:id="@+id/txtbecomeinsider"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="BECOME AN INSIDER"
+                    style="@style/label"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/orange_frame_2" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
